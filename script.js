@@ -9,7 +9,7 @@ document
 
     const response = await fetch("https://api-login-vitorugz.azurewebsites.net/login/", {
       method: "POST",
-      headers: { Authorization: "$SECRET_BASIC_AUTH" },
+      headers: { Authorization: "Basic dml0b3J1Z3o6bWVuaW5vX2JveTEz" },
       body: formData,
     });
 
