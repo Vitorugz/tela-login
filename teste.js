@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', async function () {
     const formData = new FormData();
     formData.append('jwt', jwtToken)
 
-    const response = await fetch('https://api-login-vitorugz.azurewebsites.net/whois/', {
+    const response = await fetch('$API_URL/whois/', {
         method: 'POST',
-        headers: { 'Authorization': 'Basic dml0b3J1Z3o6bWVuaW5vX2JveTEz' },
+        headers: { 'Authorization': '$SECRET_BASIC_AUTH' },
         body: formData,
     });
 
