@@ -7,9 +7,9 @@ document
     formData.append("login", document.getElementById("username").value);
     formData.append("password", document.getElementById("password").value);
 
-    const response = await fetch("https://api-login-vitorugz.azurewebsites.net/login/", {
+    const response = await fetch("$API_URL/login/", {
       method: "POST",
-      headers: { Authorization: "Basic dml0b3J1Z3o6bWVuaW5vX2JveTEz" },
+      headers: { Authorization: "$API_URL" },
       body: formData,
     });
 
